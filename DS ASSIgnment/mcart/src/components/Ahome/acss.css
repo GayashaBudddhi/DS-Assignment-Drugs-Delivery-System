@@ -1,0 +1,88 @@
+.datadisplay {
+  justify-content: center;
+  margin: 0 1% 0 2%;
+  background-color: white;
+  border-left: 2px solid #4bc6cc;
+}
+
+.addd {
+  text-align: center;
+  padding: 6px;
+  border: 2px solid #4bc6cc;
+  border-radius: 9%;
+}
+.addd:hover {
+  background-color: #4bc6cc;
+  border: 2px solid #27398d;
+}
+
+thead {
+  background-color: #4bc6cc;
+}
+.amiddle {
+  text-align: center;
+}
+
+/*for add product view*/
+.prodview {
+  background-color: #4bc6cc;
+  padding: 20px 40px;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 7px -8px 11px -5px rgba(#195190ff);
+  border: 2px solid #27398d;
+  border-radius: 3%;
+  width: 40%;
+  margin: 10% 0 0 30%;
+}
+
+/*for add cart view*/
+.cprodview {
+  background-color: #4bc6cc;
+  padding: 20px 40px;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 7px -8px 11px -5px rgba(#195190ff);
+  border: 2px solid #27398d;
+  border-radius: 3%;
+  width: 70%;
+  margin: 10px 5% 10px 15%;
+}
+.cartview {
+  text-decoration: none;
+  padding: 20px;
+  border-top: 2px solid black;
+}
+.hcartview {
+  text-decoration: none;
+  padding: 0px;
+  color: black;
+  font-size: large;
+  padding: 20px;
+}
+.ptview {
+  width: 70%;
+  background-color: white;
+  color: black;
+  border-radius: 1%;
+  margin: 20px;
+}
+
+.payview {
+  background-color: transparent;
+  color: black;
+  margin-left: 80px;
+  padding: 20px;
+  width: 80%;
+  font-size: x-large;
+}
+.btn1 {
+  margin-top: -10px;
+  float: right;
+  font-size: xx-large;
+  border-radius: 10%;
+}
+.cardv {
+  padding: 15px;
+  margin-left: 10%;
+}

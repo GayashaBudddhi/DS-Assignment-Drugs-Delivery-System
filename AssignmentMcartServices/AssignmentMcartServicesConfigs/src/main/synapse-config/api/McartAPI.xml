@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api" name="McartAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST DELETE GET">
+        <inSequence>
+            <log>
+                <property name="message" value="Welcome to Mcart Pharmacy Service"/>
+            </log>
+            <send>
+                <endpoint key="UserContollerEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="api/cartview/{id}">
+        <inSequence>
+            <property expression="json-eval($.cartview)" name="Cart" scope="default" type="STRING"/>
+            <switch source="get-property('Cart')">
+                <case regex=".*+cart view">
+                    <log description="Mcart Log" level="custom">
+                        <property name="message" value="fn:concat('Routing to ', get-property('Cart'))."/>
+                    </log>
+                    <send>
+                        <endpoint key="CartViewEP"/>
+                    </send>
+                </case>
+                <case regex=".*+payment controller">
+                    <log description="Payment Log" level="custom">
+                        <property name="message" value="fn:concat('Routing to ', get-property('Cart'))."/>
+                    </log>
+                    <send>
+                        <endpoint key="PaymentControllerEP"/>
+                    </send>
+                </case>
+                <case regex=".*+">
+                    <log description="User Log" level="custom">
+                        <property name="message" value=" fn:concat('Routing to ', get-property('Cart'))."/>
+                    </log>
+                    <send>
+                        <endpoint key="UserContollerEP"/>
+                    </send>
+                </case>
+                <default>
+                    <log level="custom">
+                        <property name="message" value="fn:concat('Invalid cart - ', get-property('Cart'))"/>
+                    </log>
+                    <respond/>
+                </default>
+            </switch>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

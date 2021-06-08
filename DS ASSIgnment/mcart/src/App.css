@@ -1,0 +1,9 @@
+/* making the entire margin 0*/
+
+.Tab {
+  width: 40%;
+  margin: 5% 0 0 30%;
+}
+.App {
+  margin: 0.1%;
+}

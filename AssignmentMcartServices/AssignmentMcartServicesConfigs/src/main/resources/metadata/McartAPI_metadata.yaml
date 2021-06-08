@@ -1,0 +1,10 @@
+---
+key: "McartAPI-1.0.0"
+name : "McartAPI"
+displayName : "McartAPI"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/api"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false

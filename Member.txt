@@ -1,0 +1,5 @@
+                Registration No			Name with Initials	              	SLIIT Email Address			Personal Email Address	
+Member 1	IT19062884			A.G. Ruvindu Kaushalya			it19062884@my.sliit.lk			ruvinduagk@gmail.com	
+Member 2	IT19061580			Amarasinghe A.A.B.G			it19061580@my.sliit.lk			gayasha9944@gmail.com	
+Member 3	IT19057248			G L I R Liyanage	               	it19057248@my.sliit.lk			riyanaishini2@gmail.com	
+Member 4	IT190998838			Wangchen T	               		it19098838@my.sliit.lk			taandinwangchen27@icloud.com	

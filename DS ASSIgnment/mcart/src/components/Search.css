@@ -1,0 +1,132 @@
+.container {
+  background-color: transparent;
+  margin: 0;
+  flex: 1;
+}
+.bage-c {
+  float: right;
+  margin-right: -5px;
+  margin-top: -45px;
+  z-index: 999;
+}
+.ocontainer {
+  background-color: transparent;
+}
+.search-label {
+  position: relative;
+  width: 100%;
+}
+.container input {
+  width: 100%;
+  z-index: 99;
+  border: none;
+  background-color: transparent;
+  height: 48px;
+  padding: 0;
+  margin-top: 4px;
+  font-size: 16px;
+  font-style: italic;
+  color: #444;
+  outline: none;
+}
+.scontainer {
+  background-color: white;
+  position: fixed;
+  border-style: hidden;
+  margin-left: 0;
+  margin-top: -1px;
+  width: 40%;
+  z-index: 99;
+}
+
+.result-container {
+  z-index: 99;
+  display: flex;
+}
+.results-container {
+  border-left: 2px solid #4bc6cc;
+  margin-left: 15px;
+}
+
+.result-items {
+  list-style-type: none;
+  border-top: 2px solid rgb(48, 42, 100);
+  margin: 0;
+  padding: 16px;
+}
+
+.search-loading {
+  height: 50%;
+  width: 50%;
+  margin-left: 20%;
+}
+
+/*for align item inside list view*/
+.u1 {
+  position: relative;
+  float: left;
+  width: 40%;
+  white-space: wrap;
+  padding-right: 2px;
+}
+
+.u3 {
+  position: relative;
+  margin-left: 80%;
+}
+.u2 {
+  position: relative;
+  margin-left: 40%;
+}
+
+.uhh1 {
+  position: relative;
+  float: left;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.uhh2 {
+  position: relative;
+  margin-left: 40%;
+  font-weight: bold;
+}
+
+/*Nav Links*/
+.nav-link-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-link {
+  color: #555;
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  border: 1px solid #898989;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+.nav-link.hide {
+  display: none;
+}
+.nav-link.show {
+  display: inline-block;
+}
+
+.greyed-out {
+  background: #f1f1f1;
+  opacity: 0.5;
+}
+
+/*used for hiding the loader*/
+.show {
+  display: inline-block;
+}
+.hide {
+  display: none;
+}
+
+.cartss {
+  color: #0e979e;
+}
